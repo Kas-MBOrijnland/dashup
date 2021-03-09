@@ -1,8 +1,12 @@
-@charset "UTF-8"; 
- 
+@charset "UTF-8";
+
+body {
+  background-color: #7FFFD4;
+
+}
 
 /* Small devices (phones) */
-@media screen and (min-width: 100px) and (max-width: 768.9px) { 
+@media screen and (min-width: 100px) and (max-width: 768.9px) {
 
 }
 
