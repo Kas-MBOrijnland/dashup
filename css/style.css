@@ -10,16 +10,28 @@ header {
   display: flex;
   flex-direction: row;
   justify-content:flex-start;
+  margin-top: 2vh;
 }
 header nav ul {
   list-style: none;
 }
-header nav ul a{
+header nav ul a {
   text-decoration: none;
   color: black;
+  padding: 9px;
+  padding-left: 2vw;
+  font-size: 2rem;
 }
 a:hover {color: red;}
 
+.logo {
+  flex: 1;
+  margin-left: 2vw;
+}
+nav {
+  flex: 3.5;
+  margin-top: 2vh;
+}
 /* Small devices (phones) */
 @media screen and (min-width: 100px) and (max-width: 768.9px) {
 
