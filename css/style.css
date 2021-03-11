@@ -4,7 +4,9 @@ body {
   background-color: #7FFFD4;
 
 }
-
+header nav ul {
+  list-style: none;
+}
 /* Small devices (phones) */
 @media screen and (min-width: 100px) and (max-width: 768.9px) {
 
