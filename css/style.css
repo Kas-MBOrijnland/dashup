@@ -21,6 +21,10 @@ header nav ul a {
   padding: 9px;
   padding-left: 2vw;
   font-size: 2rem;
+  align-self: center;
+}
+header nav {
+  border: 2px solid black;
 }
 a:hover {color: red;}
 
