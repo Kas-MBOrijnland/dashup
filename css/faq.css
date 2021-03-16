@@ -32,7 +32,7 @@ header nav ul {
 }
 header nav ul a {
     text-decoration: none;
-    color: black;
+
     padding: 9px;
     padding-left: 2vw;
     font-size: 2rem;
@@ -41,8 +41,8 @@ header nav ul a {
 header nav {
     border: 2px solid black;
 }
-a:hover {color: red;}
-  
+header nav u a:active, a:hover {color: red;}
+
 .logo {
     flex: 1;
     margin-left: 2vw;
