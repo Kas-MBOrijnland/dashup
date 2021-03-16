@@ -20,7 +20,7 @@ body {
     width: 90vh;
 }
 header {
-    height: 10vh;
+    height: 15vh;
     width: 90vw;
     display: flex;
     flex-direction: row;
@@ -55,6 +55,11 @@ nav {
   
   
 /*FAQ HERE*/
+#item-faq {
+    margin-top: 15vh;
+    height: 40vh;
+    width: 50vw;
+}
 .accordion {
     background-color: #eee;
     color: #444;
@@ -79,5 +84,6 @@ nav {
     background-color: white;
     overflow: hidden;
 }
+
 
 }

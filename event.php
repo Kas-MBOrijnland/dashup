@@ -28,6 +28,29 @@
       </nav>
     </header>
   <body>
+    <?php
 
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "phples";
+
+    $conn = new mysqli($servername, $username, $password, $database);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connection_error);
+    }
+
+    $sql = "SELECT * FROM gebruikers";
+    if($result = $conn->query($sql)) {
+        while($row = $result->fetch_row()) {
+            echo $row[0]." ".$row[1]." ".$row[2]."<br/>";
+        }
+        $result->close();
+    }
+
+    $conn->close();
+
+    ?>
   </body>
 </html>
