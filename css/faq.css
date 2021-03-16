@@ -1,42 +1,9 @@
 @charset "UTF-8";
 
-/*Header here*/
-body {
-  background-color: #7FFFD4;
-  width: 90vh;
-}
-header {
-  height: 10vh;
-  width: 90vw;
-  display: flex;
-  flex-direction: row;
-  justify-content:flex-start;
-  margin-top: 2vh;
-}
-header nav ul {
-  list-style: none;
-}
-header nav ul a {
-  text-decoration: none;
-  color: black;
-  padding: 9px;
-  padding-left: 2vw;
-  font-size: 2rem;
-  align-self: center;
-}
-header nav {
-  border: 2px solid black;
-}
-a:hover {color: red;}
 
-.logo {
-  flex: 1;
-  margin-left: 2vw;
-}
-nav {
-  flex: 4;
-  margin-top: 2vh;
-}
+
+
+
 /* Small devices (phones) */
 @media screen and (min-width: 100px) and (max-width: 768.9px) {
 
@@ -46,31 +13,71 @@ nav {
 /* Large devices (desktops)*/
 @media screen and (min-width: 769px) {
 
+
+/*Header here*/
+body {
+    background-color: #7FFFD4;
+    width: 90vh;
 }
-
-
+header {
+    height: 10vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    margin-top: 2vh;
+}
+header nav ul {
+    list-style: none;
+}
+header nav ul a {
+    text-decoration: none;
+    color: black;
+    padding: 9px;
+    padding-left: 2vw;
+    font-size: 2rem;
+    align-self: center;
+}
+header nav {
+    border: 2px solid black;
+}
+a:hover {color: red;}
+  
+.logo {
+    flex: 1;
+    margin-left: 2vw;
+}
+nav {
+    flex: 4;
+    margin-top: 2vh;
+}
+  
+  
+  
 /*FAQ HERE*/
 .accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
 }
-
+  
 .active, .accordion:hover {
-  background-color: rgb(0, 0, 0); 
-  color: aliceblue;
+    background-color: rgb(0, 0, 0); 
+    color: aliceblue;
+}
+  
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
 }
 
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
 }
