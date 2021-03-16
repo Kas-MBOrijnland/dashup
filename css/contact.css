@@ -1,6 +1,16 @@
 @charset "UTF-8";
 
-body {
+
+/* Small devices (phones) */
+@media screen and (min-width: 100px) and (max-width: 768.9px) {
+
+}
+
+
+/* Large devices (desktops)*/
+@media screen and (min-width: 769px) {
+
+  body {
   background-color: #7FFFD4;
   width: 90vh;
 }
@@ -36,13 +46,5 @@ nav {
   flex: 4;
   margin-top: 2vh;
 }
-/* Small devices (phones) */
-@media screen and (min-width: 100px) and (max-width: 768.9px) {
-
-}
-
-
-/* Large devices (desktops)*/
-@media screen and (min-width: 769px) {
 
 }
