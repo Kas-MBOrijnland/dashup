@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+
+/* Small devices (phones) */
+@media screen and (min-width: 100px) and (max-width: 768.9px) {
+
+}
+
+
+/* Large devices (desktops)*/
+@media screen and (min-width: 769px) {
+
+  body {
+  background-color: #7FFFD4;
+  width: 90vh;
+}
+header {
+  height: 10vh;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  margin-top: 2vh;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul a {
+  text-decoration: none;
+  color: black;
+  padding: 9px;
+  padding-left: 2vw;
+  font-size: 2rem;
+  align-self: center;
+}
+header nav {
+  border: 2px solid black;
+}
+a:hover {color: red;}
+
+.logo {
+  flex: 1;
+  margin-left: 2vw;
+}
+nav {
+  flex: 4;
+  margin-top: 2vh;
+}
+
+main {
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+#data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+}

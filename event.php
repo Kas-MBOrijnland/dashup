@@ -8,7 +8,7 @@
     <meta name="author" content="Kas Kozakiewicz, Morgan Nicole, Florin Burlacioiu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DashUp Energy</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/event.css">
 
   </head>
   <body>
@@ -27,13 +27,18 @@
         </ul>
       </nav>
     </header>
+
   <body>
+
+  <main>
+    <article id="data">
+<h1>Evenement</h1>
     <?php
 
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "phples";
+    $database = "energy";
 
     $conn = new mysqli($servername, $username, $password, $database);
 
@@ -41,7 +46,7 @@
         die("Connection failed: " . $conn->connection_error);
     }
 
-    $sql = "SELECT * FROM gebruikers";
+    $sql = "SELECT * FROM evenementen";
     if($result = $conn->query($sql)) {
         while($row = $result->fetch_row()) {
             echo $row[0]." ".$row[1]." ".$row[2]."<br/>";
@@ -52,5 +57,8 @@
     $conn->close();
 
     ?>
+    </article>
+
+  </main>
   </body>
 </html>
