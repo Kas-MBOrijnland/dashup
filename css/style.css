@@ -36,7 +36,8 @@ header nav {
   padding-top: 0px;
   margin-bottom: -2.4vh;
 }
-header nav ul a:active, a:hover {color: red;}
+header nav ul a:hover {color: red;}
+header nav ul a:active {color: navy;}
 
 .logo {
   flex: 1;
@@ -59,5 +60,11 @@ body {
   background-color: black;
   color: white;
 }
-
+#topright {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: -15vh;
+  margin-right: -1.5vw;
+}
 }
