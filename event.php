@@ -22,7 +22,7 @@
           <a href="event.php">Events</a>
           <a href="artiesten.php">Artiesten</a>
           <a href="product.html">Producten</a>
-          <a href="contact.php">Contact</a>
+          <a href="contact.html">Contact</a>
           <a href="faq.html">FAQ</a>
         </ul>
       </nav>
@@ -33,6 +33,7 @@
   <main>
     <article id="data">
 <h1>Evenement</h1>
+
     <?php
 
     $servername = "localhost";
