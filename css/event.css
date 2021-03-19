@@ -10,7 +10,7 @@
 /* Large devices (desktops)*/
 @media screen and (min-width: 769px) {
 
-  body {
+body {
   background-color: #7FFFD4;
   width: 90vh;
 }
@@ -60,5 +60,4 @@ main {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-}
 }
