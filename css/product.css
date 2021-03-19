@@ -11,7 +11,7 @@
 @media screen and (min-width: 769px) {
 
   /*NAV*/
-  
+
   header {
     height: 10vh;
     width: 90vw;
@@ -38,7 +38,7 @@
     margin-bottom: -2.4vh;
   }
   a:hover {color: red;}
-  
+
   .logo {
     flex: 1;
     margin-left: 2vw;
@@ -47,18 +47,18 @@
     flex: 5;
     margin-top: 2vh;
   }
-  
+
   /*darkmode*/
   body {
     padding: 25px;
-    background-color: white;
+    background-color: #7FFFD4;
     color: black;
     font-size: 25px;
   }
-  
+
   .dark-mode {
     background-color: black;
     color: white;
   }
-  
+
   }
