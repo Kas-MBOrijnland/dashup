@@ -1,3 +1,17 @@
+<?php
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "energy";
+
+$conn = new mysqli($servername, $username, $password, $database);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connection_error);
+}
+<?>
+
 <!DOCTYPE html>
 <html lang="nl">
   <head>
@@ -33,18 +47,8 @@
   <main>
     <article id="data">
 <h1>Evenement</h1>
+
     <?php
-
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "energy";
-
-    $conn = new mysqli($servername, $username, $password, $database);
-
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connection_error);
-    }
 
     $sql = "SELECT * FROM evenementen";
     if($result = $conn->query($sql)) {
