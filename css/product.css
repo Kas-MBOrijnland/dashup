@@ -1,5 +1,60 @@
 @charset "UTF-8";
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: lightgrey;
+  text-align: center;
+}
+
+#navigatie {
+  background-color: blue;
+  overflow: hidden;
+}
+
+#navigatie a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 5px 10px;
+  transition: all 200ms ease-out;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+#navigatie a:hover{
+  color: rgb(73, 73, 73);
+  transition: 0.3s;
+}
+
+nav {
+  background-color:white;
+  position: center;
+}
+
+ul {
+  width: auto;
+  margin-top: 7px;
+}
+
+li {
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+h1 {
+  margin: 10px;
+}
+
+#ingredienten {
+  text-align: right;
+  margin-right: 5vw;
+}
+
 
 /* Small devices (phones) */
 @media screen and (min-width: 100px) and (max-width: 768.9px) {
@@ -12,53 +67,4 @@
 
   /*NAV*/
   
-  header {
-    height: 10vh;
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    margin-top: 2vh;
-  }
-  header nav ul {
-    list-style: none;
-  }
-  header nav ul a {
-    text-decoration: none;
-    padding: 9px;
-    padding-left: 2vw;
-    color: red;
-    font-size: 2rem;
-    align-self: center;
-  }
-  header nav {
-    border: 2px solid black;
-    padding-bottom: 5px;
-    padding-top: 0px;
-    margin-bottom: -2.4vh;
-  }
-  a:hover {color: red;}
-  
-  .logo {
-    flex: 1;
-    margin-left: 2vw;
-  }
-  nav {
-    flex: 5;
-    margin-top: 2vh;
-  }
-  
-  /*darkmode*/
-  body {
-    padding: 25px;
-    background-color: white;
-    color: black;
-    font-size: 25px;
-  }
-  
-  .dark-mode {
-    background-color: black;
-    color: white;
-  }
-  
-  }
+}
