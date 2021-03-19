@@ -11,41 +11,6 @@ body {
   text-align: center;
 }
 
-#navigatie {
-  background-color: blue;
-  overflow: hidden;
-}
-
-#navigatie a {
-  float: center;
-  color: black;
-  text-align: center;
-  padding: 5px 10px;
-  transition: all 200ms ease-out;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-#navigatie a:hover{
-  color: rgb(73, 73, 73);
-  transition: 0.3s;
-}
-
-nav {
-  background-color:white;
-  position: center;
-}
-
-ul {
-  width: auto;
-  margin-top: 7px;
-}
-
-li {
-  display: inline-block;
-  padding: 15px 20px;
-}
-
 h1 {
   margin: 10px;
 }
@@ -66,4 +31,37 @@ h1 {
 @media screen and (min-width: 769px) {
 
   /*NAV*/
+
+  header {
+    height: 15vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    margin-top: 2vh;
+}
+header nav ul {
+    list-style: none;
+}
+header nav ul a {
+    text-decoration: none;
+
+    padding: 9px;
+    padding-left: 2vw;
+    font-size: 2rem;
+    align-self: center;
+}
+header nav {
+    border: 2px solid black;
+}
+header nav u a:active, a:hover {color: red;}
+
+.logo {
+    flex: 1;
+    margin-left: 2vw;
+}
+nav {
+    flex: 4;
+    margin-top: 2vh;
+}
 }
