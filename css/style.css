@@ -48,6 +48,7 @@ nav {
   margin-top: 2vh;
 }
 
+
 /*darkmode*/
 body {
   padding: 25px;
@@ -60,11 +61,20 @@ body {
   background-color: black;
   color: white;
 }
+
 #topright {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   margin-top: -15vh;
   margin-right: -1.5vw;
+}
+
+#gray-ground {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10vh 20vh;
+  background-color: #F5DF4D;
+  color: #939597;
 }
 }
