@@ -123,8 +123,8 @@ main h1 {
 
 }
   
-.active, .accordion:hover {
-  background-color: rgb(0, 0, 0); 
+.accordion :hover :active  {
+  background-color: rgb(167, 17, 17); 
   color: aliceblue;
 }
 
