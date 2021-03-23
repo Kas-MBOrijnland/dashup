@@ -38,5 +38,37 @@
       <article></article>
     </section>
 
+    <main>
+    <article id="data">
+<h1>artiesten</h1>
+
+    <?php
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "energy";
+
+    $conn = new mysqli($servername, $username, $password, $database);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connection_error);
+    }
+
+
+    $sql = "SELECT * FROM artiesten";
+    if($result = $conn->query($sql)) {
+        while($row = $result->fetch_row()) {
+            echo $row[0]." ".$row[1]." ".$row[2]."<br/>";
+        }
+        $result->close();
+    }
+
+    $conn->close();
+
+    ?>
+    </article>
+
+  </main>
   </body>
 </html>
