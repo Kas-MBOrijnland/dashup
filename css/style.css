@@ -36,8 +36,9 @@ header nav {
   padding-top: 0px;
   margin-bottom: -2.4vh;
 }
+header nav ul a:link a:active a:visited {color: brown;}
 header nav ul a:hover {color: red;}
-header nav ul a:active {color: navy;}
+
 
 .logo {
   flex: 1;
