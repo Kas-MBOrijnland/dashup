@@ -10,10 +10,8 @@
 /* Large devices (desktops)*/
 @media screen and (min-width: 769px) {
 
-body {
-  background-color: #7FFFD4;
-  width: 90vh;
-}
+/*NAV*/
+
 header {
   height: 10vh;
   width: 90vw;
@@ -27,24 +25,57 @@ header nav ul {
 }
 header nav ul a {
   text-decoration: none;
-  color: black;
   padding: 9px;
   padding-left: 2vw;
+
   font-size: 2rem;
   align-self: center;
 }
 header nav {
-  border: 2px solid black;
+  padding-bottom: 5px;
+  padding-top: 0px;
+  margin-bottom: -2.4vh;
 }
-a:hover {color: red;}
+header nav ul a:hover {color: red;}
+header nav ul a:active {color: navy;}
 
 .logo {
   flex: 1;
   margin-left: 2vw;
 }
 nav {
-  flex: 4;
+  flex: 5;
   margin-top: 2vh;
+}
+
+
+/*darkmode*/
+body {
+  padding: 25px;
+  background-color: #7FFFD4;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+#topright {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: -15vh;
+  margin-right: -0.08vw;
+}
+
+#gray-ground {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10vh 20vh;
+  background-color: #F5DF4D;
+  color: #939597;
 }
 
 main {
@@ -60,4 +91,5 @@ main {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+}
 }

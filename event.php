@@ -12,9 +12,9 @@
 
   </head>
   <body>
-    <header>
+  <header>
       <article class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="foto van logo" height="150px"></a>
+        <a href="index.html"><img src="images/dashup.svg" alt="foto van logo" height="140px"></a>
       </article>
       <nav>
         <ul>
@@ -26,7 +26,17 @@
           <a href="faq.html">FAQ</a>
         </ul>
       </nav>
+
+      <script src="../dashup/js/script.js"></script>
     </header>
+    
+    <div id="topright"> 
+      <button onclick="myFunction()">Dark Mode</button>
+    </div>
+
+    <section id="gray-ground">
+      <article></article>
+    </section>
 
   <body>
 
