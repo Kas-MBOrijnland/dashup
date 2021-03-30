@@ -18,7 +18,7 @@
       </article>
       <nav>
         <ul>
-          <a href="aanbiedingen.html">Aanbiedingen</a>
+          <a href="aanbiedingen.php">Aanbiedingen</a>
           <a href="event.php">Events</a>
           <a href="artiesten.php">Artiesten</a>
           <a href="product.html">Producten</a>
@@ -37,6 +37,40 @@
     <section id="gray-ground">
       <article></article>
     </section>
+
+    <main>
+      <article id="container1">
+        <?php
+
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $database = "energy";
+    
+        $conn = new mysqli($servername, $username, $password, $database);
+    
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connection_error);
+        }
+    
+    
+        $sql = "SELECT * FROM evenementen";
+        if($result = $conn->query($sql)) {
+            while($row = $result->fetch_row()) {
+                echo $row[6]."<br/>";
+            }
+            $result->close();
+        }
+    
+        $conn->close();
+    
+        ?>
+      </article>
+
+      <article id="container2">
+        
+      </article>
+    </main>
 
   </body>
 </html>
