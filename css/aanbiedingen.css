@@ -67,4 +67,19 @@ nav {
 
 }
 
+
+/* Main here*/
+
+
+main {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-rows: 2, 20vh;
+  grid-template-areas: 
+      "sale sale"
+      "sale sale";
+  border: 2px solid red;
+}
+
 }
