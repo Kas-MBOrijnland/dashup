@@ -27,18 +27,15 @@
         </ul>
       </nav>
 
-      <script src="../dashup/js/script.js"></script>
+      
     </header>
     
-    <div id="topright"> 
-      <button onclick="myFunction()">Dark Mode</button>
-    </div>
 
     <section id="gray-ground">
       <article></article>
     </section>
 
-  <body>
+ 
 
   <main>
     <article id="data">

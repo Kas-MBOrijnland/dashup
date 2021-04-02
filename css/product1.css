@@ -10,7 +10,7 @@ body {
   background-color: lightgrey;
   text-align: center;
 }
-
+*/
 h1 {
   margin: 10px;
 }
@@ -19,7 +19,7 @@ h1 {
   text-align: right;
   margin-right: 5vw;
 }
-*/
+
 
 /* Small devices (phones) */
 @media screen and (min-width: 100px) and (max-width: 768.9px) {

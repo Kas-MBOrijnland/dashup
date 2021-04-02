@@ -10,10 +10,18 @@
 /* Large devices (desktops)*/
 @media screen and (min-width: 769px) {
 
+
 /*NAV*/
 
+body {
+  padding: 25px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+
 header {
-  height: 10vh;
+  height: 0.0001vh;
   width: 90vw;
   display: flex;
   flex-direction: row;
@@ -27,7 +35,6 @@ header nav ul a {
   text-decoration: none;
   padding: 9px;
   padding-left: 2vw;
-
   font-size: 2rem;
   align-self: center;
 }
@@ -36,46 +43,28 @@ header nav {
   padding-top: 0px;
   margin-bottom: -2.4vh;
 }
-header nav ul a:hover {color: red;}
-header nav ul a:active {color: navy;}
+
+
+header nav ul a:link {color: #2f4696;}
+header nav ul a:visited {color: #2f4696;}
+header nav ul a:hover{color: #e42029;} 
 
 .logo {
   flex: 1;
   margin-left: 2vw;
+  margin-top: 4vh;
 }
 nav {
   flex: 5;
-  margin-top: 2vh;
-}
-
-
-/*darkmode*/
-body {
-  padding: 25px;
-  background-color: #7FFFD4;
-  color: black;
-  font-size: 25px;
-}
-
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-
-#topright {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-top: -15vh;
-  margin-right: -0.08vw;
+  margin-top: 6vh;
 }
 
 #gray-ground {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 10vh 20vh;
-  background-color: #F5DF4D;
-  color: #939597;
+  background-color: #141212;
+
 }
 
 }
