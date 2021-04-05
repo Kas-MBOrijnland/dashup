@@ -35,8 +35,7 @@ h1 {
   }
 
   #ingredienten {
-    text-align: right;
-    margin-right: 5vw;
+    text-align: center;
   }
   
   #smaken {
@@ -44,11 +43,21 @@ h1 {
   }
   
   #blik-groot {
-    text-align: center;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    display: none;
   }
 
+  #blik-groot2 {
+    text-align: center;
+  }
+
+  
+  #smaken {
+    display: none;
+  }
+
+  #smaken2 {
+    text-align: center;
+  }
 
 }
 
@@ -127,5 +136,12 @@ nav {
   margin-bottom: 5vw;
 }
 
+#blik-groot2 {
+  display: none;
+}
+
+#smaken2 {
+  display: none;
+}
 
 }
