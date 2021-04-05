@@ -86,12 +86,13 @@ nav {
 }
 
 #contact {
-  margin-top: 2vw;
+  margin-top: 25vw;
 }
 
 .contact-form{
   width: 85%;
   max-width: 600px;
+  margin-top: 20vh;
   background: #141212;
   position: absolute;
   top: 50%;
