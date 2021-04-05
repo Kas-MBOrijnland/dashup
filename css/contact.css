@@ -1,9 +1,16 @@
 @charset "UTF-8";
 
-
+* {
+  font-family: 'Open Sans', sans-serif;
+}
 /* Small devices (phones) */
 @media screen and (min-width: 100px) and (max-width: 768.9px) {
-
+  body {
+    padding: 25px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  }
 }
 
 
@@ -65,6 +72,10 @@ nav {
   grid-template-rows: 10vh 20vh;
   background-color: #141212;
 
+}
+
+#contact {
+  margin-top: 20vw;
 }
 
 }
