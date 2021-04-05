@@ -21,12 +21,12 @@ body {
 }
 
 header {
-  height: 0.0001vh;
-  width: 90vw;
+  height: 0.01vh;
+  width: 98vw;
   display: flex;
   flex-direction: row;
   justify-content:flex-start;
-  margin-top: 2vh;
+  margin-top: 0.2vh;
 }
 header nav ul {
   list-style: none;
@@ -47,7 +47,7 @@ header nav {
 
 header nav ul a:link {color: #2f4696;}
 header nav ul a:visited {color: #2f4696;}
-header nav ul a:hover{color: #e42029;} 
+header nav ul a:hover{color: #e42029;}
 
 .logo {
   flex: 1;
@@ -64,7 +64,13 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 10vh 20vh;
   background-color: #141212;
+}
 
+.dashup{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 }
