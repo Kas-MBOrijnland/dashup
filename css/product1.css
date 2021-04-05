@@ -1,4 +1,8 @@
 @charset "UTF-8";
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
 /*
 * {
   margin: 0;
@@ -18,6 +22,16 @@ h1 {
 #ingredienten {
   text-align: right;
   margin-right: 5vw;
+}
+
+#smaken {
+  text-align: center;
+}
+
+#blik-groot {
+  text-align: center;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 
