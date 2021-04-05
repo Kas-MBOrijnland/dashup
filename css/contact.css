@@ -13,13 +13,13 @@
   }
 
   #contact {
-    margin-top: 110vw;
+    margin-top: 160vw;
   }  
 
   .contact-form{
     width: 85%;
     max-width: 600px;
-    margin-top: 20vh;
+    margin-top: 30vh;
     background: #141212;
     position: absolute;
     top: 50%;

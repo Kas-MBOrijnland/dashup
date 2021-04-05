@@ -19,20 +19,6 @@ h1 {
   margin: 10px;
 }
 
-#ingredienten {
-  text-align: right;
-  margin-right: 5vw;
-}
-
-#smaken {
-  text-align: center;
-}
-
-#blik-groot {
-  text-align: center;
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-}
 
 
 /* Small devices (phones) */
@@ -46,6 +32,21 @@ h1 {
 
   #main-info {
     text-align: center;
+  }
+
+  #ingredienten {
+    text-align: right;
+    margin-right: 5vw;
+  }
+  
+  #smaken {
+    text-align: center;
+  }
+  
+  #blik-groot {
+    text-align: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
   }
 
 
@@ -109,6 +110,21 @@ nav {
   grid-template-rows: 10vh 20vh;
   background-color: #141212;
 
+}
+
+#ingredienten {
+  text-align: right;
+  margin-right: 5vw;
+}
+
+#smaken {
+  text-align: center;
+}
+
+#blik-groot {
+  text-align: center;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 
