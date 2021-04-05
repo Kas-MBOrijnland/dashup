@@ -37,6 +37,17 @@ h1 {
 
 /* Small devices (phones) */
 @media screen and (min-width: 100px) and (max-width: 768.9px) {
+  body {
+    padding: 25px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  }
+
+  #main-info {
+    text-align: center;
+  }
+
 
 }
 
