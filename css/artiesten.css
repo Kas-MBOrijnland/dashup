@@ -10,19 +10,22 @@
     color: rgb(255, 255, 255);
 }
 header{
-    margin: 15px;
-    height: 20vh;
+    margin: 5px;
+    height: 30vh;
     width: 98%;
 }
 nav{
     
-    height: 15vh;
+    height: 25vh;
     width: 100%;
 }
 main {
     height: 300px;
     width: 100%;
-    margin-top: 35vh;
+    margin-left: 5vw;
+}
+#data {
+  margin-left: 5vw;
 }
 header nav ul { list-style: none;}
 header nav ul a {text-decoration: none;}
