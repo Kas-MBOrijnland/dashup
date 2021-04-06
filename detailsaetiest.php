@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="language" content="nl">
     <meta name="description" content="DashUp Energy, ">
-    <meta name="keywords" content="DashUp Energy, ">
+    <meta name="keywords" content="DashUp Energy, Energy drink ">
     <meta name="author" content="Kas Kozakiewicz, Morgan Nicole, Florin Burlacioiu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DashUp Energy</title>
-    <link rel="stylesheet" type="text/css" href="css/artiesten.css">
+    <link rel="stylesheet" type="text/css" href="css/event-page.css">
 
   </head>
   <body>
@@ -31,40 +31,49 @@
     </header>
     
 
-
     <section id="gray-ground">
       <article></article>
     </section>
 
-    <main>
-    <article id="data">
-<h1>artiesten</h1>
+ 
 
-    <?php
+  <main>
+  <?php
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "energy";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "energy";
 
-    $conn = new mysqli($servername, $username, $password, $database);
+$conn = new mysqli($servername, $username, $password, $database);
 
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connection_error);
-    }
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connection_error);
+}
+
+//WHERE datum <= NOW()
+$sql = "SELECT * FROM artiesten WHERE artiest_id=".$_GET['id'];
+$result = $conn->query($sql);
 
 
-    $sql = "SELECT * FROM artiesten";
-    if($result = $conn->query($sql)) {
-        while($row = $result->fetch_row()) {
-            echo $row[0]." ".$row[1]." ".$row[2]."<br/>";
-        }
-        $result->close();
-    }
+if($result = $conn->query($sql)) {
 
-    $conn->close();
-    ?>
-    </article>
+    $row = $result->fetch_object();
+    
+
+    echo "<br>";
+    echo "<section class='artiesten'>". $row->naam ."</section>";
+    echo "<section class='artiesten'>". $row->achternaam ."</section>";
+    echo "<section class='artiesten'>". $row->statement."</section>";
+        
+    $result->close();
+} else {
+  echo "doei";
+}
+
+$conn->close();
+
+?>
 
   </main>
   </body>
