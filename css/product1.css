@@ -3,18 +3,7 @@
 * {
   font-family: 'Open Sans', sans-serif;
 }
-/*
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-}
 
-body {
-  background-color: lightgrey;
-  text-align: center;
-}
-*/
 h1 {
   margin: 10px;
 }
@@ -74,7 +63,6 @@ header nav ul a:hover{color: #e42029;}
   #blik-groot2 {
     text-align: center;
   }
-
   
   #smaken {
     display: none;
@@ -82,6 +70,10 @@ header nav ul a:hover{color: #e42029;}
 
   #smaken2 {
     text-align: center;
+  }
+
+  #slideshow {
+    display: none;
   }
 
 }
@@ -97,6 +89,12 @@ body {
   background-color: #000000;
   color: rgb(255, 255, 255);
   font-size: 25px;
+}
+
+#slideshow {
+  text-align: center;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 header {
@@ -166,6 +164,10 @@ nav {
 }
 
 #smaken2 {
+  display: none;
+}
+
+#slideshow2 {
   display: none;
 }
 
