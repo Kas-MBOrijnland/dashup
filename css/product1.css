@@ -46,10 +46,13 @@ header nav ul a:hover{color: #e42029;}
 
   #main-info {
     text-align: center;
+    margin-top: 20vh;
+    font-size: 20px;
   }
 
   #ingredienten {
     text-align: center;
+    margin-top: 100vw;
   }
   
   #smaken {
@@ -73,7 +76,9 @@ header nav ul a:hover{color: #e42029;}
   }
 
   #slideshow {
-    display: none;
+    height: 200px;
+    position: relative;
+    text-align: center;
   }
 
 }
