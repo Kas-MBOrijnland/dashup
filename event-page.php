@@ -61,10 +61,13 @@ if($result = $conn->query($sql)) {
     $row = $result->fetch_object();
     
 
-
-    echo "<section class='evenementen'>". $row->artiest_id ."</section>";
-    echo "<section class='evenementen'>". $row->max_bezoekers ."</section>";
-    echo "<section class='evenementen'>". $row->datum."</section>";
+    echo "<br>";
+    echo "Artiesten";
+    echo  "<section class='evenementen'>" . $row->artiest_id ."</section>";
+    echo "Max Bezoekers";
+    echo  "<section class='evenementen'>". $row->max_bezoekers ."</section>";
+    echo "Datum";
+    echo  "<section class='evenementen'>". $row->datum."</section>";
         
     $result->close();
 } else {
