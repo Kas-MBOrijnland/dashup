@@ -62,11 +62,11 @@ if($result = $conn->query($sql)) {
     
 
     echo "<br>";
-    echo "naam";
+    echo "Naam";
     echo "<section class='artiesten'>". $row->naam ."</section>";
-    echo "achternaam";
+    echo "Achternaam";
     echo "<section class='artiesten'>". $row->achternaam ."</section>";
-    echo "statement";
+    echo "Statement";
     echo "<section class='artiesten'>". $row->statement."</section>";
         
     $result->close();
