@@ -25,9 +25,10 @@ main {
     margin-top: -55vh;
 }
 header nav ul { list-style: none;}
+header nav ul a {text-decoration: none;}
 header nav ul a:link {color: #2f4696;}
 header nav ul a:visited {color: #2f4696;}
-header nav ul a:hover{color: #e42029;} 
+header nav ul a:hover{color: #e42029;}  
 }
 
 
