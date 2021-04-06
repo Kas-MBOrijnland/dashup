@@ -71,6 +71,8 @@
     ?>
     
     </article>
+    
+    <footer></footer>
 
   </main>
   </body>
