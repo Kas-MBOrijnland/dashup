@@ -44,13 +44,46 @@
          <I>Smaakprofiel: Zoet en Zout</I></p>
       </article>
 
-      <article id="blik-groot">
-      <img src="images/melon dashup.png" alt="melon dashup" height="560px">
-      </article>
 
-      <article id="blik-groot2">
-        <img src="images/melon dashup.png" alt="melon dashup" height="300px">
-        </article>
+        <script>
+        var i = 0; 			
+var images = [];	
+var time = 1000;	
+	 
+
+images[0] = "images/melon dashup.png";
+images[1] = "images/forest dashup.png";
+images[2] = "images/lemon dashup.png";
+images[3] = "images/Strawberry dashup.png";
+
+
+function changeImg(){
+	document.slide.src = images[i];
+
+	
+	if(i < images.length - 1){
+	
+	  i++; 
+	} else { 
+	
+		i = 0;
+	}
+
+
+	setTimeout("changeImg()", time);
+}
+
+
+window.onload=changeImg;
+</script>
+
+<section id="slideshow">
+<img name="slide" width="560" />
+</section>
+
+
+
+
 
       <article id="ingredienten">
           <h1>Ingrediënten </h1>
