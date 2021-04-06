@@ -31,6 +31,48 @@
     header nav ul a:link {color: #2f4696;}
     header nav ul a:visited {color: #2f4696;}
     header nav ul a:hover{color: #e42029;} 
+
+    .dashup{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+      max-width: 300px;
+      margin: auto;
+      float: left;
+      padding: 2vw;
+      padding-left: 4vw;
+      margin-left: 1vw;
+      margin-bottom: 2vw;
+      align-items: center;
+      font-family: arial;
+    }
+    
+    .price {
+      color: black;
+      font-size: 22px;
+    }
+    
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: black;
+      background-color: #2f4696;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+    
+    .card button:hover {
+      opacity: 0.7;
+    }
+    
 }
 
 
