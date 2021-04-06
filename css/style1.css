@@ -87,6 +87,7 @@ body {
   background-color: #000000;
   color: rgb(255, 255, 255);
   font-size: 25px;
+  overflow-x: hidden;
 }
 
 header {
