@@ -95,15 +95,15 @@ nav {
 }
 
 main{
-  height: 300px;
-    width: 100%;
-    margin-top: 25vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-footer{
-  height: 10vh;
-}
+    height: 300px;
+      width: 100%;
+      margin-top: 25vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  footer{
+    height: 10vh;
+  }
 
 }
