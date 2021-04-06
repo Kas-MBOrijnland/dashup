@@ -1,0 +1,65 @@
+    <?php
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "energy";
+
+    $conn = new mysqli($servername, $username, $password, $database);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connection_error);
+    }
+
+//WHERE datum <= NOW()
+    $sql = "SELECT * FROM evenementen WHERE evenementen_id=".$_GET['id'];
+    if($result = $conn->query($sql)) {
+        $row = $result->fetch_object();
+            echo "<section class='evenementen'>" .$row->evenement_id."</section>";
+        
+        $result->close();
+    } else {
+      echo "doei";
+    }
+
+    $conn->close();
+
+    ?>
+
+
+
+
+
+
+
+    // werkend
+
+
+        <?php
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "energy";
+
+    $conn = new mysqli($servername, $username, $password, $database);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connection_error);
+    }
+
+//WHERE datum <= NOW()
+    $sql = "SELECT * FROM evenementen";
+    if($result = $conn->query($sql)) {
+       while($row = $result->fetch_object()) {
+        echo "<section class='evenementen'><a href='event-page.php'>".$row->evenement_id."</a></section>";
+       }
+            
+        $result->close();
+    } else {
+      echo "doei";
+    }
+
+    $conn->close();
+
+    ?>

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="language" content="nl">
     <meta name="description" content="DashUp Energy, ">
-    <meta name="keywords" content="DashUp Energy, ">
+    <meta name="keywords" content="DashUp Energy, Energy drink ">
     <meta name="author" content="Kas Kozakiewicz, Morgan Nicole, Florin Burlacioiu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DashUp Energy</title>
-    <link rel="stylesheet" type="text/css" href="css/artiesten.css">
+    <link rel="stylesheet" type="text/css" href="css/event.css">
 
   </head>
   <body>
@@ -31,12 +31,13 @@
     </header>
     
 
-
     <section id="gray-ground">
       <article></article>
     </section>
 
-    <main>
+ 
+
+  <main>
     <article id="data">
 <h1>artiesten</h1>
 
@@ -53,18 +54,22 @@
         die("Connection failed: " . $conn->connection_error);
     }
 
-
+//WHERE datum <= NOW()
     $sql = "SELECT * FROM artiesten";
     if($result = $conn->query($sql)) {
-        while($row = $result->fetch_row()) {
-            echo $row[0]." ".$row[1]." ".$row[2]."<br/>";
-        }
+       while($row = $result->fetch_object()) {
+        echo "<section class='artiesten'><a href='detailsaetiest.php?id=".$row->artiest_id."'>".$row->naam."</a></section>";
+       }
+            
         $result->close();
+    } else {
+      echo "doei";
     }
 
     $conn->close();
 
     ?>
+    
     </article>
 
   </main>

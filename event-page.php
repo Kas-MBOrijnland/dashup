@@ -8,7 +8,7 @@
     <meta name="author" content="Kas Kozakiewicz, Morgan Nicole, Florin Burlacioiu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DashUp Energy</title>
-    <link rel="stylesheet" type="text/css" href="css/event.css">
+    <link rel="stylesheet" type="text/css" href="css/event-page.css">
 
   </head>
   <body>
@@ -38,39 +38,45 @@
  
 
   <main>
-    <article id="data">
-<h1>Evenement</h1>
+  <?php
 
-    <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "energy";
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "energy";
+$conn = new mysqli($servername, $username, $password, $database);
 
-    $conn = new mysqli($servername, $username, $password, $database);
-
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connection_error);
-    }
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connection_error);
+}
 
 //WHERE datum <= NOW()
-    $sql = "SELECT * FROM evenementen";
-    if($result = $conn->query($sql)) {
-       while($row = $result->fetch_object()) {
-        echo "<section class='evenementen'><a href='event-page.php?id=".$row->evenement_id."'>".$row->datum."</a></section>";
-       }
-            
-        $result->close();
-    } else {
-      echo "doei";
-    }
+$sql = "SELECT * FROM evenementen, artiesten, locaties WHERE evenement_id=".$_GET['id'];
+$result = $conn->query($sql);
 
-    $conn->close();
 
-    ?>
+if($result = $conn->query($sql)) {
+
+    $row = $result->fetch_object();
     
-    </article>
+
+    echo "<br>";
+    echo "Artiesten";
+    echo  "<section class='evenementen'>" . $row->artiest_id ."</section>";
+    echo "Max Bezoekers";
+    echo  "<section class='evenementen'>". $row->max_bezoekers ."</section>";
+    echo "Datum";
+    echo  "<section class='evenementen'>". $row->datum."</section>";
+        
+    $result->close();
+} else {
+  echo "doei";
+}
+
+$conn->close();
+
+?>
 
   </main>
   </body>
