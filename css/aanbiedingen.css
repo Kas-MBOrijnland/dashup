@@ -108,7 +108,7 @@ main {
   grid-template-areas: 
       "sale sale"
       "sale sale";
-  border: 2px solid red;
+
 }
 
 }
