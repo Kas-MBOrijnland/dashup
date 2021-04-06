@@ -5,7 +5,30 @@
 
 /* Small devices (phones) */
 @media screen and (min-width: 100px) and (max-width: 768.9px) {
-
+  body {
+    width: 98vw;
+    height: 100%;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+header{
+    margin: 5px;
+    height: 100px;
+    width: 98%;
+}
+nav{
+    
+    height: 100px;
+    width: 100%;
+}
+main {
+    height: 300px;
+    width: 100%;
+}
+header nav ul { list-style: none;}
+header nav ul a:link {color: #2f4696;}
+header nav ul a:visited {color: #2f4696;}
+header nav ul a:hover{color: #e42029;} 
 }
 
 
