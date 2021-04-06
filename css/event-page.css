@@ -1,3 +1,5 @@
+
+
 @charset "UTF-8";
 
 
@@ -65,25 +67,17 @@ nav {
 }
 
 
+.evenement {
+    padding: 5px;
 
-
+}
 
 main {
     width: 90vw;
     height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-}
 
-
-.evenementen a {
-  text-decoration: none;
-  color: aliceblue;
 
 }
-
 
 
 
