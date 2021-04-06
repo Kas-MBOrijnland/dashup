@@ -56,8 +56,8 @@
 
     $sql = "SELECT * FROM artiesten";
     if($result = $conn->query($sql)) {
-        while($row = $result->fetch_object()) {
-            echo "<section class:'artiest'> </section>"
+        while($row = $result->fetch_row()) {
+            echo $row[0]." ".$row[1]." ".$row[2]."<br/>";
         }
         $result->close();
     }
