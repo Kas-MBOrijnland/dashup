@@ -41,8 +41,8 @@
         <p>Met Dashup kunt u de hele dag door zonder één gram suiker.</p>
       </section>
 
-<br>
-<br>
+      <br>
+      <br>
 
 
       <section id="Catering">
@@ -74,6 +74,47 @@
           </p>
           <button onclick="window.location.href='event.php'">Kijk verder</button>
         </div>
+
+      </section>
+
+
+      <section id="base">
+        <?php
+
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $database = "energy";
+
+        $conn = new mysqli($servername, $username, $password, $database);
+
+        if ($conn->connect_error) {
+          die("Connection failed: " . $conn->connection_error);
+        }
+
+          //WHERE datum <= NOW()
+        $sql = "SELECT * FROM evenementen LEFT JOIN artiesten ON evenementen.artiest_id = artiesten.artiest_id";
+        if($result = $conn->query($sql)) {
+          while($row = $result->fetch_object()) {
+            echo "<section class='evenementen'><a href='event-page.php?id=".$row->evenement_id."'>".$row->datum."</a></section>";
+          }
+        
+          $result->close();
+        } else {
+          echo "doei";
+        }
+
+        $conn->close();
+
+        ?>
+
+        <article id="three">
+
+        </article>
+
+        <article id="onsale">
+
+        </article>
 
       </section>
 
