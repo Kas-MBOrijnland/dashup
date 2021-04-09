@@ -12,9 +12,9 @@
 
   </head>
   <body>
-  <header>
+    <header>
       <article class="logo">
-        <a href="index.html"><img src="images/dashup.svg" alt="foto van logo" height="140px"></a>
+        <a href="index.php"><img src="images/dashup.svg" alt="foto van logo" height="140px"></a>
       </article>
       <nav>
         <ul>
@@ -26,8 +26,6 @@
           <a href="faq.html">FAQ</a>
         </ul>
       </nav>
-
-      
     </header>
     
 
