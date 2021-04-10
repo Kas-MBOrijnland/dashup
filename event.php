@@ -55,10 +55,11 @@
 //WHERE datum <= NOW()
     $sql = "SELECT  DATE_FORMAT(datum, '%d-%m-%Y') AS datum, plaatsnaam
         FROM evenementen 
+        LEFT JOIN artiesten ON evenementen.artiest_id = artiesten.artiest_id
         LEFT JOIN  locaties ON evenementen.locatie_id = locaties.locatie_id";
     if($result = $conn->query($sql)) {
        while($row = $result->fetch_object()) {
-        echo "<section class='evenementen'><a href='event-page.php?id=".$row->evenement_id."'>".$row->datum.$row->plaatsnaam."</a></section>";
+        echo "<section class='evenementen'><a href='event-page.php?id='>".$row->datum." ".$row->plaatsnaam."</a></section>";
        }
             
         $result->close();
