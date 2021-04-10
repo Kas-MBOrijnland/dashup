@@ -108,9 +108,6 @@
 
         ?>
 
-        <article id="three">
-
-        </article>
 
         <article id="onsale">
 
