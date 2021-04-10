@@ -92,8 +92,8 @@
           die("Connection failed: " . $conn->connection_error);
         }
 
-          //WHERE datum <= NOW()
-        $sql = "SELECT * FROM evenementen LEFT JOIN artiesten ON evenementen.artiest_id = artiesten.artiest_id";
+          //WHERE datum <= NOW() CAST(DateToRemoveTime as DATE)
+        $sql = "SELECT date_format(datum, '%m-%d-%Y') AS datum FROM evenementen LEFT JOIN artiesten ON evenementen.artiest_id = artiesten.artiest_id LIMIT 3";
         if($result = $conn->query($sql)) {
           while($row = $result->fetch_object()) {
             echo "<section class='evenementen'><a href='event-page.php?id=".$row->evenement_id."'>".$row->datum."</a></section>";
