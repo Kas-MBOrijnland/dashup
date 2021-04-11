@@ -136,6 +136,9 @@ nav {
   background-color: #141212;
 }
 
+#Catering {
+  width: 99vw;
+}
 .dashup{
   display: flex;
   flex-direction: column;
@@ -183,14 +186,15 @@ nav {
   color: fuchsia;
   font-size: 2rem;
 }
-.aanbiedingen-now {
-  width: 90vw;
-  height: 20vh;
-}
+
 .evenementen a {
   text-decoration: none;
   margin-top: 3vh;
   font-size: 2rem;
+  color: greenyellow;
 }
-
+#base {
+  width: 90vw;
+  height: 100vh;
+}
 }
