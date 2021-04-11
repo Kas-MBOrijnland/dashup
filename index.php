@@ -98,7 +98,7 @@
                 FROM evenementen 
                 LEFT JOIN locaties ON evenementen.locatie_id = locaties.locatie_id
                 LEFT JOIN artiesten ON evenementen.artiest_id = artiesten.artiest_id
-                ORDER BY datum >= NOW()
+                ORDER BY  DATE_FORMAT(datum >= NOW(), '%d-%m-%Y') ASC
                 LIMIT 3";
         if($result = $conn->query($sql)) {
           while($row = $result->fetch_object()) {
