@@ -181,8 +181,16 @@ nav {
   text-decoration: none;
   margin-top: 3vh;
   color: fuchsia;
+  font-size: 2rem;
 }
-
-
+.aanbiedingen-now {
+  width: 90vw;
+  height: 20vh;
+}
+.evenementen a {
+  text-decoration: none;
+  margin-top: 3vh;
+  font-size: 2rem;
+}
 
 }
