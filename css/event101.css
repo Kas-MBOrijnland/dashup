@@ -95,7 +95,7 @@ nav {
 }
 
 main{
-    height: 300px;
+    height: 90vh;
       width: 100%;
       margin-top: 25vh;
       display: flex;
@@ -103,7 +103,7 @@ main{
       align-items: center;
   }
   footer{
-    height: 10vh;
+    height: 20vh;
   }
 
 }

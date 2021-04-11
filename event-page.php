@@ -38,43 +38,49 @@
   <main>
   <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "energy";
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $database = "energy";
 
-$conn = new mysqli($servername, $username, $password, $database);
+  $conn = new mysqli($servername, $username, $password, $database);
 
-if ($conn->connect_error) {
+  if ($conn->connect_error) {
     die("Connection failed: " . $conn->connection_error);
-}
+  }
 
-//WHERE datum <= NOW()
-$sql = "SELECT * FROM evenementen, artiesten, locaties WHERE evenement_id=".$_GET['id'];
-$result = $conn->query($sql);
+  
+  $sql = "SELECT DATE_FORMAT(datum, '%d-%m-%Y') AS datum, plaatsnaam, naam, max_bezoekers
+          FROM evenementen 
+          LEFT JOIN locaties ON evenementen.locatie_id = locaties.locatie_id
+          LEFT JOIN artiesten ON evenementen.artiest_id = artiesten.artiest_id  
+          WHERE evenement_id=".$_GET['id'];
+  $result = $conn->query($sql);
 
 
-if($result = $conn->query($sql)) {
+  if($result = $conn->query($sql)) {
 
     $row = $result->fetch_object();
     
 
     echo "<br>";
-    echo "Artiesten";
-    echo  "<section class='evenementen'>" . $row->artiest_id ."</section>";
+    echo "Artiest";
+    echo  "<section class='evenementen'>" . $row->naam ."</section>";
     echo "Max Bezoekers";
     echo  "<section class='evenementen'>". $row->max_bezoekers ."</section>";
     echo "Datum";
     echo  "<section class='evenementen'>". $row->datum."</section>";
+    echo "Plaatsnaam";
+    echo  "<section class='evenementen'>". $row->plaatsnaam."</section>";
         
     $result->close();
-} else {
+  } else {
   echo "doei";
-}
+  }
 
-$conn->close();
+  $conn->close();
 
-?>
+  ?>
 
   </main>
   </body>
