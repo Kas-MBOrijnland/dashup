@@ -90,7 +90,7 @@ INSERT INTO aanbiedingen VALUES(6,'Doldwaze dagen','2021-04-01','2021-04-30', 'E
 INSERT INTO aanbiedingen VALUES(7,'Lenteactie','2021-05-01','2021-05-31', 'Nieuwe energie voor halve prijs','lente.png',102);
 
 INSERT INTO evenementen VALUES(501, '2021-03-01', 101, 51, 1000);
-INSERT INTO evenementen VALUES(502, '2021-03-04', 105, 53, 3000);
+INSERT INTO evenementen VALUES(502, '2021-05-04', 105, 53, 3000);
 INSERT INTO evenementen VALUES(503, '2021-03-09', 102, 54, 1000);
 INSERT INTO evenementen VALUES(504, '2021-03-11', 101, 55, 3000);
 INSERT INTO evenementen VALUES(505, '2021-03-15', 101, 51, 1000);
@@ -103,8 +103,8 @@ INSERT INTO evenementen VALUES(511, '2021-03-30', 102, 52, 2000);
 INSERT INTO evenementen VALUES(512, '2021-03-31', 101, 51, 5000);
 INSERT INTO evenementen VALUES(513, '2021-04-01', 102, 54, 5000);
 INSERT INTO evenementen VALUES(514, '2021-04-05', 103, 59, 3000);
-INSERT INTO evenementen VALUES(515, '2021-04-12', 102, 52, 2000);
-INSERT INTO evenementen VALUES(516, '2021-03-13', 101, 55, 5000);
+INSERT INTO evenementen VALUES(515, '2021-04-15', 102, 52, 2000);
+INSERT INTO evenementen VALUES(516, '2021-04-25', 101, 55, 5000);
 
 
 INSERT INTO gebruikers VALUES 
