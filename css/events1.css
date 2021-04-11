@@ -108,7 +108,7 @@ main{
     margin-top: 10px;
     margin-bottom: 5px;
   }
-  .evenementen a{
+  .evenementen{
     text-decoration: none;
     padding: 20px;
     font-size: 2rem;
